@@ -1,173 +1,352 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Venugopal Reddy | Portfolio</title>
 
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-  />
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 </head>
+
 <body>
 
-  <!-- NAVBAR -->
+  <!-- ================= NAVBAR ================= -->
+
   <header>
+
     <nav class="navbar">
+
       <h2 class="logo">VenuReddy</h2>
 
       <ul class="nav-links">
+
         <li><a href="#home">Home</a></li>
+
         <li><a href="#about">About</a></li>
+
         <li><a href="#skills">Skills</a></li>
+
         <li><a href="#projects">Projects</a></li>
+
+        <li><a href="#certificates">Certificates</a></li>
+
         <li><a href="#contact">Contact</a></li>
+
       </ul>
+
     </nav>
+
   </header>
 
-  <!-- HERO -->
-  <section class="hero" id="home">
-    <div class="hero-content">
-      <h1>Hi, I'm <span>Venugopal Reddy</span></h1>
+  <!-- ================= HERO SECTION ================= -->
 
-      <h3>Computer Science Engineer | Aspiring Data Scientist</h3>
+  <section class="hero" id="home">
+
+    <div class="hero-content">
+
+      <!-- PROFILE IMAGE -->
+      <img src="./assets/profile.png"
+        alt="Profile Image"
+        class="profile-img">
+
+      <h1>
+        Hi, I'm
+        <span>Venugopal Reddy</span>
+      </h1>
+
+      <h3>
+        Computer Science Engineer |
+        Aspiring Data Scientist
+      </h3>
 
       <p>
-        Passionate about Data Science, AI applications,
-        and modern web development.
+        Passionate about Data Science,
+        Artificial Intelligence,
+        Web Development,
+        and modern technologies.
       </p>
 
+      <!-- BUTTONS -->
       <div class="hero-buttons">
-        <a href="#projects" class="btn">View Projects</a>
-        <a href="#contact" class="btn secondary">Contact Me</a>
-      </div>
 
-      <div class="social-icons">
-        <a href="https://github.com/venureddy07" target="_blank">
-          <i class="fab fa-github"></i>
+        <a href="#projects" class="btn">
+          View Projects
         </a>
 
-        <a href="https://www.linkedin.com/in/venureddy07/" target="_blank">
+        <a href="./assets/resume.pdf"
+          download
+          class="btn secondary">
+          Download Resume
+        </a>
+
+      </div>
+
+      <!-- SOCIAL ICONS -->
+
+      <div class="social-icons">
+
+        <a href="https://github.com/venureddy07"
+          target="_blank"
+          rel="noopener noreferrer">
+
+          <i class="fab fa-github"></i>
+
+        </a>
+
+        <a href="https://www.linkedin.com/in/venureddy07/"
+          target="_blank"
+          rel="noopener noreferrer">
+
           <i class="fab fa-linkedin"></i>
+
         </a>
 
         <a href="mailto:venureddy77.pagidela@gmail.com">
+
           <i class="fas fa-envelope"></i>
+
         </a>
+
       </div>
+
     </div>
+
   </section>
 
-  <!-- ABOUT -->
+  <!-- ================= ABOUT ================= -->
+
   <section class="about" id="about">
-    <h2 class="section-title">About Me</h2>
+
+    <h2 class="section-title">
+      About Me
+    </h2>
 
     <div class="about-container">
+
       <p>
-        I am a passionate Computer Science Engineering student with strong interests in
-        Data Science, Artificial Intelligence, Web Development, and Analytics.
-        I enjoy building real-world applications using Python, Flask, C++,
+        I am a passionate Computer Science Engineering student
+        with strong interests in Data Science,
+        Artificial Intelligence,
+        Web Development,
+        and Analytics.
+
+        I enjoy building real-world applications
+        using Python, Flask, C++,
         and modern frontend technologies.
       </p>
+
     </div>
+
   </section>
 
-  <!-- SKILLS -->
+  <!-- ================= SKILLS ================= -->
+
   <section class="skills" id="skills">
-    <h2 class="section-title">Skills</h2>
+
+    <h2 class="section-title">
+      Skills
+    </h2>
 
     <div class="skills-container">
 
       <div class="skill-card">Python</div>
+
       <div class="skill-card">C++</div>
+
       <div class="skill-card">HTML</div>
+
       <div class="skill-card">CSS</div>
+
       <div class="skill-card">JavaScript</div>
+
       <div class="skill-card">Flask</div>
+
       <div class="skill-card">MySQL</div>
+
       <div class="skill-card">Power BI</div>
+
       <div class="skill-card">Data Analysis</div>
+
       <div class="skill-card">Jupyter Notebook</div>
 
     </div>
+
   </section>
 
-  <!-- PROJECTS -->
+  <!-- ================= PROJECTS ================= -->
+
   <section class="projects" id="projects">
 
-    <h2 class="section-title">Projects</h2>
+    <h2 class="section-title">
+      Projects
+    </h2>
 
     <div class="projects-container">
 
+      <!-- PROJECT 1 -->
+
       <div class="project-card">
-        <h3>Student Attendance System</h3>
+
+        <img src="./assets/attendance.png"
+          alt="Attendance System"
+          class="project-img">
+
+        <h3>
+          Student Attendance System
+        </h3>
 
         <p>
           Web-based attendance management system using
           C++, Flask, HTML, CSS, and JavaScript.
         </p>
 
-        <a href="#" class="btn">View Project</a>
       </div>
 
+      <!-- PROJECT 2 -->
+
       <div class="project-card">
-        <h3>AI Fact Generator</h3>
+
+        <img src="./assets/ai-fact-generator.png"
+          alt="AI Fact Generator"
+          class="project-img">
+
+        <h3>
+          AI Fact Generator
+        </h3>
 
         <p>
-          AI-powered multilingual fact generator using
-          Flask and Gemini API.
+          AI-powered multilingual fact generator
+          using Flask and Gemini API.
         </p>
 
-        <a href="#" class="btn">View Project</a>
       </div>
 
+      <!-- PROJECT 3 -->
+
       <div class="project-card">
-        <h3>Smartphone Market Analysis</h3>
+
+        <img src="./assets/smartphone-analysis.png"
+          alt="Smartphone Analysis"
+          class="project-img">
+
+        <h3>
+          Smartphone Market Analysis
+        </h3>
 
         <p>
-          Data analysis project using Python, Pandas,
-          NumPy, and visualization techniques.
+          Data analysis project using Python,
+          Pandas, NumPy,
+          and visualization techniques.
         </p>
 
-        <a href="#" class="btn">View Project</a>
       </div>
 
     </div>
+
   </section>
 
-  <!-- CONTACT -->
+  <!-- ================= CERTIFICATES ================= -->
+
+  <section class="certificates" id="certificates">
+
+    <h2 class="section-title">
+      Certificates
+    </h2>
+
+    <div class="projects-container">
+
+      <div class="project-card">
+
+        <h3>
+          ChatGPT Prompt Engineering
+        </h3>
+
+        <a href="./assets/chatgpt-certificate.pdf"
+          target="_blank"
+          class="btn">
+
+          View Certificate
+
+        </a>
+
+      </div>
+
+      <div class="project-card">
+
+        <h3>
+          Cloud Computing - NPTEL
+        </h3>
+
+        <a href="./assets/cloud-certificate.pdf"
+          target="_blank"
+          class="btn">
+
+          View Certificate
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+
   <section class="contact" id="contact">
 
-    <h2 class="section-title">Contact Me</h2>
+    <h2 class="section-title">
+      Contact Me
+    </h2>
 
     <div class="contact-container">
 
       <form>
-        <input type="text" placeholder="Your Name" required>
 
-        <input type="email" placeholder="Your Email" required>
+        <input type="text"
+          placeholder="Your Name"
+          required>
 
-        <textarea rows="6" placeholder="Your Message"></textarea>
+        <input type="email"
+          placeholder="Your Email"
+          required>
+
+        <textarea rows="6"
+          placeholder="Your Message"></textarea>
 
         <button type="submit" class="btn">
+
           Send Message
+
         </button>
+
       </form>
 
     </div>
 
   </section>
 
-  <!-- FOOTER -->
+  <!-- ================= FOOTER ================= -->
+
   <footer>
-    <p>© 2026 Venugopal Reddy | Built with ❤️</p>
+
+    <p>
+      © 2026 Venugopal Reddy |
+      Built with ❤️
+    </p>
+
   </footer>
 
+  <!-- JS -->
   <script src="script.js"></script>
 
 </body>
+
 </html>
