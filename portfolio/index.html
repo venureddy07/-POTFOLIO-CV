@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨‍💻</text></svg>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO Optimization -->
+    <title>Pagidala Venugopal Reddy | Portfolio</title>
+    <meta name="description" content="Personal portfolio of Pagidala Venugopal Reddy - Computer Science Engineering student and Aspiring Data Scientist. Specialized in AI, Web Development, and Data Analytics." />
+    <meta name="keywords" content="Pagidala Venugopal Reddy, Venugopal Reddy, Data Scientist, Portfolio, Computer Science Engineer, AI Developer, Web Developer, Lovely Professional University" />
+    <meta name="author" content="Pagidala Venugopal Reddy" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Pagidala Venugopal Reddy | Portfolio" />
+    <meta property="og:description" content="Explore the portfolio of Pagidala Venugopal Reddy, showcasing engineering and data science projects, technical skills, and research." />
+    <meta property="og:url" content="https://github.com/venureddy07" />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+      /* Initial fallback loading style to avoid flash of unstyled content */
+      body {
+        background-color: #030014;
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        overflow-x: hidden;
+      }
+      .initial-loader {
+        position: fixed;
+        inset: 0;
+        background-color: #030014;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+        transition: opacity 0.5s ease;
+      }
+      .spinner {
+        width: 50px;
+        height: 50px;
+        border: 3px solid rgba(139, 92, 246, 0.1);
+        border-top-color: #06b6d4;
+        border-radius: 50%;
+        animation: spin 1s infinite linear;
+      }
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+    </style>
+  </head>
+  <body class="bg-dark-bg text-dark-text antialiased selection:bg-accent-purple/30 selection:text-accent-cyan">
+    <!-- Fallback raw DOM loader while React loads -->
+    <div id="fallback-loader" class="initial-loader">
+      <div class="spinner"></div>
+      <p style="color: #9ca3af; margin-top: 20px; font-size: 0.875rem; letter-spacing: 0.1em; text-transform: uppercase;">Initializing Portfolio...</p>
+    </div>
+
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    <script>
+      // Remove fallback loader once React is ready to render
+      window.addEventListener('DOMContentLoaded', () => {
+        const loader = document.getElementById('fallback-loader');
+        if (loader) {
+          loader.style.opacity = '0';
+          setTimeout(() => loader.remove(), 500);
+        }
+      });
+    </script>
+  </body>
+</html>
